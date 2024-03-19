@@ -38,12 +38,14 @@ h1{
 
 /* Qr Tile */
 #qr-tile{
-    width: 16.75rem;   
+    width: 85%;  
+    max-width: 18rem; 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 1rem;
+    padding: 1em;
+    padding-bottom: 2.5em;
     border-radius: 5%;
     background-color: var(--white);
     max-height: 80%;
