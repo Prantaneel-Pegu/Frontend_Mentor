@@ -1,0 +1,69 @@
+/* Import font 'Outfit' */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap'); 
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue:  hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --p-fs1: 15px;
+    --font-normal: 400;
+    --font-bold: 700;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General */
+body{
+    font-family: Outfit, sans-serif;
+    background-color: var(--light-gray);
+    text-align: center;
+}
+
+p{
+    font-size: var(--p-fs1);
+    font-weight: var(--font-normal);
+    color: var(--grayish-blue);
+}
+
+h1{
+    font-weight: 700;
+    color: var(--dark-blue);
+    font-size: calc(var(--p-fs1) * 1.39);
+}
+
+/* Qr Tile */
+#qr-tile{
+    width: 16.75rem;   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    border-radius: 5%;
+    background-color: var(--white);
+    max-height: 80%;
+    box-shadow: 0px 0px 1px var(--grayish-blue);
+
+}
+
+#qr-image{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+#qr-heading{
+    padding: 0.8em 0;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
